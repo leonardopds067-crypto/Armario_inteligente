@@ -14,3 +14,36 @@ elif requisicao["nicho_ocupado"]:
 else:
     print(f"Acesso Concedido: Chave do {requisicao['chave_solicitada']} Liberada.")
 
+
+colaboradores={
+    "123": {
+        "nome_completo": "Equino egua"
+        "tipo_cargo": "docente",
+        "ativo": "true",
+        "admin": "false",
+        "num_chaves_em_uso": 1,
+    }
+
+    "321": {
+            "nome_completo": "Equino suino"
+            "tipo_cargo": "cordenação",
+            "ativo": "true",
+            "admin": "false",
+            "num_chaves_em_uso": 1,
+        }
+    "132": {
+            "nome_completo": "Equino ave"
+            "tipo_cargo": "limpeza",
+            "ativo": "false",
+            "admin": "false",
+            "num_chaves_em_uso": 1,
+        }
+
+    "123": {
+            "nome_completo": "Equino egua"
+            "tipo_cargo": "docente",
+            "ativo": "true",
+            "admin": "false",
+            "num_chaves_em_uso": 1,
+        }
+}
