@@ -8,3 +8,7 @@ def index(request):
     return render(request,'index.html', context)
 
 # Create your views here.
+
+from django.http import JsonResponse 
+def status_api(request): 
+    return JsonResponse({'status': 'online', 'sistema': 'Key Track IoT'})

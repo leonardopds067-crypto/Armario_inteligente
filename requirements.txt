@@ -4,3 +4,7 @@ sqlparse==0.6.0
 tzdata==2026.5
 
 ola
+
+
+python-not env
+pais copg
