@@ -26,3 +26,17 @@ urlpatterns = [
 ]
 
 
+
+# keytrack/settings.py ou keytrack/urls.py
+from django.contrib import admin
+from django.urls import path, include
+from core.api import api # Importa a instancia da NinjaAPI
+urlpatterns = [
+path('admin/', admin.site.urls),
+path('api/', api.urls), # Mapeia todas as rotas RESTful sob o
+prefixo /api/
+path('', include('core.urls')),
+]
+
+
+
