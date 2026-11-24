@@ -36,4 +36,7 @@
   "postCreateCommand": "pip install --upgrade pip && pip install django djangorestframework && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi",
 
   "remoteUser": "vscode"
+
+    
 }
+

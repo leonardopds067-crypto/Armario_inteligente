@@ -88,3 +88,16 @@ def consultar_uuid(request, uuid: str):
         "autorizado": False,
         "mensagem": "Cartão/Tag não cadastrado no sistema.",
     }
+  class DiaDaSemana(models.integerChoices):
+    DOMINGO = 1, 'Domingo'
+    SEGUNDA = 2, 'Segunda-Feira'
+    TERCA = 3, 'Terça-Feira'
+    QUARTA = 4, 'Quarta-Feira'
+    QUINTA = 5, 'Quinta-Feira'
+    SEXTA = 6, 'Sexta-Feira'
+    SABADO = 7,'sabado'
+
+   class reservaFixa(models.model):
+       nr_dia_semana = models.IntegerField(choices=DiaDaSemana.choices)
+       hr_inicio = models.TimeField()
+       hr_fim = models.TImeField()
